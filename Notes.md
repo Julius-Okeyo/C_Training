@@ -42,3 +42,37 @@ code that is sensitive to data type size. If extended precision for
 calculations is necessary, your program can use sizeof() to test the hardware
 to verify that adequate variable storage size is present.
 
+## Writing Strings Using printf and puts
+The standard format specifier for printing strings with printf is %s
+The width parameter can be used to print a short string in a long space
+The .precision parameter limits the length of longer strings.
+int puts ( const char * str );
+Writes the string out to standard output ( the screen ) and automatically appends a newline character at the end.
+This is a lower-level routine that printf, without formatting, and possibly faster.
+
+## Reading Strings Using scanf, gets, and fgets
+The standard format specifier for reading strings with scanf is %s
+scanf reads in a string of characters, only up to the first non-whitespace
+character. I.e. it stops reading when it encounters a space, tab, or newline character.
+scanf appends a null byte to the end of the character string stored.
+scanf does skip over any leading whitespace characters in order to find the first
+non-whitespace character.
+The width field can be used to limit the maximum number of characters read.
+The argument passed to scanf needs to be of type pointer-to-character, i.e. char *, and is
+normally the name of a char array. ( In this case the size of the array -1 should be given
+as the width field, to make sure scanf can append the null byte without overflowing the array.
+char * gets ( char * str );
+The gets function will read a string of characters from standard input ( the keyboard ) until
+it encounters either a newline character or the end of file.
+Unlike scanf, gets does not care about spaces in the input, treating them the same as any
+other character.
+Note that gets has no provision for limiting the number of characters read, leading to possible
+overflow problems.
+When gets encounters a new line character, it stops reading, but does NOT store it.
+A null byte is always appended to the end of the string of stored characters.
+char * fgets ( char * str, int num, FILE * stream );
+fgets is equivalent to gets, except for two additional arguments and one key difference:
+num provides for a limit on the maximum number of characters read
+The FILE * argument allows fgets to read from any file. stdin may be entered to read from the keyboard.
+fgets stops reading when it encounters a new line character, and it DOES store the newline character.
+A null byte is always appended to the end of the string of stored characters.
