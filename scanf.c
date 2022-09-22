@@ -7,7 +7,4 @@ void main(){
     printf("Enter surname: ");
     scanf("%s", &Surname);
     printf("Welcome to C programming %s %s",First_name,Surname);
-
-
-
 }
