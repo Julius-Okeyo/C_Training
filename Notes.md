@@ -157,3 +157,18 @@ The N case statements are optional. If the case statements are
 omitted, the switch reduces to an if where the first statement following the switch is executed if the <expression> evaluates true. This
 usage renders the switch somewhat pointless, because the real power
 of the switch comes from judicious use of the case statements.
+### Unconditional Control
+The C goto and Fortran GOTO allow for unconditional program
+transfer. The syntax of the C goto and Fortran GOTO statements are
+goto <statement label> GOTO <statement#>
+In C, the <statement label> is an identifier formed with the same
+rules as those for variable names. When the goto is executed, program
+execution transfers to the statement following the label. The
+label name must be followed by a colon (:) to distinguish it from a
+program statement. In Fortran, program execution is transferred to
+the statement number following the GOTO. An example of use of
+the C goto is shown in Figure 4.14.
+It is not recommended that you use the C goto, for it conflicts with
+the structured nature of the language and makes programs difficult
+to follow. Nevertheless, in older Fortran programs it is used heavily,
+and you should therefore expect to encounter it.
