@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <Windows.h>
 void main(){
     char First_name[] = "";
     char Surname[] = "";
@@ -7,4 +8,5 @@ void main(){
     printf("Enter surname: ");
     scanf("%s", &Surname);
     printf("Welcome to C programming %s %s",First_name,Surname);
+    Sleep(30);
 }
