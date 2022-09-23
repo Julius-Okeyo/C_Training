@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<Windows.h>
+#include <stdio.h>
+#include <Windows.h>
 void main(){
     char First_name[] = "";
     char Surname[] = "";

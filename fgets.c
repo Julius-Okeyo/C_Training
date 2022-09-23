@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 void main(){
     FILE *fp;
     char str[10];
