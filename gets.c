@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <Windows.h>
 void main(){
-    char First_name[] = "";
-    char Surname[] = "";
+    char First_name[8] = "";
+    char Surname[8] = "";
     printf("Enter first name: ");
     gets(First_name);
     printf("Enter surname: ");
