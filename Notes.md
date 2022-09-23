@@ -133,3 +133,12 @@ lists a subset of conversion characters recognized by printf that will
 be useful to you in your programming:
 
 ## Control Flow
+When a continue statement is encountered during the execution of a loop,
+statementup at the next increment. A break statement causes the loop to
+terminate immediately. The continue and break statements are used with if
+statements that test whether to skip loop execution statements or to
+terminate the loop for some reason.
+When algorithm requirements indicate that statements should
+be executed until a condition evaluates true, the C do-while loop
+structure is used. A do-while statement has the following syntax:
+do <statement> while(<expression>);
