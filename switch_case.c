@@ -7,7 +7,7 @@ void main(){
         case 'p': 
         printf("The printf command lets you display characters on the standard output device.");
         Sleep(360);
-        ;break;
+        break;
         case 's':
         printf("The scanf command lets the program read user inputs into a standard input device");
         Sleep(360);
