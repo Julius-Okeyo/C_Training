@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<Windows.h>
+#include <stdio.h>
+#include <Windows.h>
 void main(){
     int a = 32;
     float b = 12.43;
