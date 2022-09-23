@@ -142,3 +142,18 @@ When algorithm requirements indicate that statements should
 be executed until a condition evaluates true, the C do-while loop
 structure is used. A do-while statement has the following syntax:
 do <statement> while(<expression>);
+### Conditional Decision structures
+Conditional decision structures permit complex sequential evaluation of an expression against multiple target values. In C, the switch
+statement yields the equivalent of multiple if-else statements in a
+compact and very readable form. The flowchart for the C switch is
+shown in Figure 4.13. There is no equivalent structure in Fortran.
+The switch statement has the following syntax:
+switch(<expr>){
+case <constant expression 1>: <statement>
+case <constant expression 2>: <statement>
+case <constant expression N>: <statement>
+96
+The N case statements are optional. If the case statements are
+omitted, the switch reduces to an if where the first statement following the switch is executed if the <expression> evaluates true. This
+usage renders the switch somewhat pointless, because the real power
+of the switch comes from judicious use of the case statements.
