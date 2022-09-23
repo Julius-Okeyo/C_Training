@@ -18,4 +18,5 @@ int main(){
         printf("Difference = ",a-b);
     }
     Sleep(30);
+    return 0;
 }
